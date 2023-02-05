@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth !important;
+  }
+
+  /* Disable smooth scroll on Firefox only: ensures scroll to top on route change */
+  @-moz-document url-prefix() {
+    html {
+      @apply scroll-auto;
+    }
+  }
+}
