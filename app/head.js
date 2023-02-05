@@ -5,7 +5,7 @@ export default function Head() {
   return (
     <>
       <DefaultTags />
-      <title>Insure-AI</title>
+      <title>Insurochat</title>
     </>
   );
 }

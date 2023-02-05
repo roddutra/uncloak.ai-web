@@ -53,7 +53,7 @@ export function Navbar() {
         <Container className='relative z-50 flex justify-between py-8'>
           <div className='relative z-10 flex items-center gap-16'>
             <Link href='/' aria-label='Home' className='text-2xl font-bold'>
-              Insure-AI
+              Insurochat
             </Link>
             <div className='hidden lg:flex lg:gap-10'>
               <NavLinks />
