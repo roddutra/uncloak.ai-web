@@ -6,8 +6,8 @@ Developed as part of the Perigian Digital Hub's AI Hackaton: [event link](https:
 
 ## Team
 
-- Rod Dutra
-- Michael Lee
+- [Rod Dutra](https://github.com/roddutra)
+- [Michael Lee](https://github.com/mlee94)
 - Tony Loxton
 - Greg (?)
 - Don (?)
@@ -26,5 +26,5 @@ And then:
 
 ```bash
 # Run local server
-npm install
+npm run dev
 ```
