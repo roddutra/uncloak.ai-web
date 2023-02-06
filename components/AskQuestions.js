@@ -32,12 +32,7 @@ export function AskQuestions() {
                     className='rounded-md resize-none w-full focus:outline-cyan-500 focus:ring-0'
                     placeholder='Enter your question...'
                   ></textarea>
-                  <Button
-                    type='submit'
-                    variant='solid'
-                    color='cyan'
-                    className='px-8 py-4'
-                  >
+                  <Button type='submit' variant='solid' color='cyan'>
                     Submit
                   </Button>
                 </div>
@@ -54,11 +49,6 @@ export function AskQuestions() {
           </div>
         </div>
       </Container>
-      {/* <div className='relative col-span-6'>
-        <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
-          <CircleBackground color='#13B5C8' className='animate-spin-slower' />
-        </div>
-      </div> */}
     </section>
   );
 }

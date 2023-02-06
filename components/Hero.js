@@ -90,11 +90,7 @@ export function Hero() {
               Insurochat provides the clarity you need.
             </p>
             <div className='mt-8 flex flex-wrap gap-x-6 gap-y-4'>
-              <Button
-                href='#ask-question'
-                variant='solid'
-                className='px-8 py-4'
-              >
+              <Button href='#ask-question' variant='solid'>
                 Try it now
               </Button>
             </div>
