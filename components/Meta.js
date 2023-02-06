@@ -1,8 +1,16 @@
-'use client';
+import Head from 'next/head';
 
-export default function DefaultTags() {
+export function Meta({ pageTitle = 'Insurochat' }) {
   return (
-    <>
+    <Head>
+      <title>{pageTitle}</title>
+      <meta
+        name='description'
+        content='Understand your insurance policy with ease using AI. Get clear
+              explanations of coverage and exclusions to make informed
+              decisions. Say goodbye to confusing language and hidden clauses.'
+      />
+
       <meta name='viewport' content='width=device-width, initial-scale=1' />
       <link
         rel='icon'
@@ -26,6 +34,6 @@ export default function DefaultTags() {
         href='/favicon-16x16.png'
       />
       <link rel='manifest' href='/site.webmanifest' />
-    </>
+    </Head>
   );
 }

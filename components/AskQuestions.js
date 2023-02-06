@@ -1,5 +1,3 @@
-'use client';
-
 import { Button } from './Button';
 // import { CircleBackground } from './CircleBackground';
 import { Container } from './Container';
@@ -50,7 +48,7 @@ export function AskQuestions() {
             </div>
             <div className='flex-1 text-white flex flex-col justify-start items-center'>
               <div className='bg-gray-800 rounded-md p-8 w-full'>
-                Answer here...
+                Your answer will appear here...
               </div>
             </div>
           </div>

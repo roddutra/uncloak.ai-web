@@ -4,7 +4,7 @@ A simple front-end using Next.js to pass a policy document and relevant question
 
 Developed as part of the Perigian Digital Hub's AI Hackaton: [event link](https://www.meetup.com/coding-from-beach/events/291157900/)
 
-## Team
+# Team
 
 - [Rod Dutra](https://github.com/roddutra)
 - [Michael Lee](https://github.com/mlee94)

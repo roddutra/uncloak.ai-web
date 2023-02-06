@@ -87,7 +87,7 @@ export function Hero() {
               Understand your insurance policy with ease using AI. Get clear
               explanations of coverage and exclusions to make informed
               decisions. Say goodbye to confusing language and hidden clauses.
-              Insure-AI provides the clarity you need.
+              Insurochat provides the clarity you need.
             </p>
             <div className='mt-8 flex flex-wrap gap-x-6 gap-y-4'>
               <Button

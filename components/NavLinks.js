@@ -1,5 +1,3 @@
-'use client';
-
 import { useState } from 'react';
 import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -9,8 +7,6 @@ export function NavLinks() {
 
   return [
     ['Try it', '#ask-question'],
-    // ['Reviews', '#reviews'],
-    // ['Pricing', '#pricing'],
     ['FAQs', '#faqs'],
   ].map(([label, href], index) => (
     <Link
