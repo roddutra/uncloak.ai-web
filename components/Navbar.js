@@ -6,6 +6,7 @@ import { Button } from './Button';
 import { Container } from './Container';
 import { NavLinks } from './NavLinks';
 import { useAuthenticator } from '@aws-amplify/ui-react';
+import { useEffect } from 'react';
 
 function MenuIcon(props) {
   return (
@@ -47,6 +48,8 @@ function MobileNavLink({ children, ...props }) {
 
 export default function Navbar() {
   const { user, signOut } = useAuthenticator((context) => [context.user]);
+  useEffect(() => {}, [user]);
+
   return (
     <header>
       <nav>
