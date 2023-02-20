@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 import { Container } from './Container';
 
 const faqs = [
@@ -56,7 +54,7 @@ const faqs = [
   ],
 ];
 
-export function Faqs() {
+export default function Faqs() {
   return (
     <section
       id='faqs'

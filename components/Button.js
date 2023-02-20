@@ -6,7 +6,7 @@ const baseStyles = {
   solid:
     'inline-flex justify-center rounded-lg py-3 px-8 text-sm font-semibold outline-2 outline-offset-2 transition-colors',
   outline:
-    'inline-flex justify-center rounded-lg py-3 px-8 border py-[calc(theme(spacing.2)-1px)] px-[calc(theme(spacing.3)-1px)] text-sm outline-2 outline-offset-2 transition-colors',
+    'inline-flex justify-center rounded-lg border py-3 px-8 text-sm outline-2 outline-offset-2 transition-colors',
 };
 
 const variantStyles = {

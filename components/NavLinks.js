@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
+import Link from 'next/link';
+import { useState } from 'react';
 
 export function NavLinks() {
   let [hoveredIndex, setHoveredIndex] = useState(null);

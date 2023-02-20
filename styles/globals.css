@@ -13,4 +13,33 @@
       @apply scroll-auto;
     }
   }
+
+  /* Fix Amplify UI FileUploader transparent buttons issue */
+  #__next
+    > div
+    > div
+    > main
+    > div
+    > div
+    > div
+    > div.flex.flex-col.flex-1.gap-4.max-w-xl
+    > div
+    > div.amplify-fileuploader__previewer__footer
+    > div.amplify-fileuploader__previewer__footer__actions
+    > button.amplify-button.amplify-field-group__control.amplify-button--primary.amplify-button--small,
+  #__next
+    > div
+    > div
+    > main
+    > div
+    > div.font-bold.flex.flex-col.gap-4
+    > div
+    > div.flex.flex-col.flex-1.gap-4.max-w-xl
+    > div
+    > div.amplify-fileuploader__previewer__body
+    > div.amplify-fileuploader__file
+    > div
+    > button.amplify-button.amplify-field-group__control.amplify-button--primary.amplify-button--small {
+    background-color: black;
+  }
 }

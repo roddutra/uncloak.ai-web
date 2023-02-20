@@ -1,14 +1,16 @@
-import { AskQuestions } from '../components/AskQuestions';
-import { Faqs } from '../components/Faqs';
-import { Hero } from '../components/Hero';
+import AskQuestionDemo from '../components/AskQuestionDemo';
+import Faqs from '../components/Faqs';
+import Hero from '../components/Hero';
 import Layout from '../components/layout';
+import { siteName } from '../lib/constants';
 
 export default function Index() {
+  const pageTitle = siteName;
   return (
     <>
-      <Layout pageTitle='Insurochat'>
+      <Layout pageTitle={pageTitle}>
         <Hero />
-        <AskQuestions />
+        <AskQuestionDemo />
         <Faqs />
       </Layout>
     </>

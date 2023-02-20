@@ -1,7 +1,8 @@
+import Link from 'next/link';
+import { siteName } from '../lib/constants';
 import { Container } from './Container';
-import { NavLinks } from './NavLinks';
 
-export function Footer() {
+export default function Footer() {
   return (
     <footer className='border-t border-gray-200'>
       <Container>
@@ -9,14 +10,15 @@ export function Footer() {
           <div>
             <div className='flex items-center text-gray-900'>
               <div>
-                <p className='text-base font-semibold'>Insure-AI</p>
+                <p className='text-base font-semibold'>{siteName}</p>
                 <p className='mt-1 text-sm'>
                   Understand your insurance policy in simple english.
                 </p>
               </div>
             </div>
-            <nav className='mt-11 flex gap-8'>
-              <NavLinks />
+            <nav className='mt-11 flex gap-8 text-sm text-gray-700 hover:text-gray-900'>
+              <Link href='/'>Home</Link>
+              <Link href='/#faqs'>FAQs</Link>
             </nav>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-export function Meta({ pageTitle = 'Insurochat' }) {
+export default function Meta({ pageTitle }) {
   return (
     <Head>
       <title>{pageTitle}</title>

@@ -3,6 +3,7 @@ import { useId } from 'react';
 import { Button } from './Button';
 import { Container } from './Container';
 import HeroImage from '../public/hero.png';
+import { siteName } from '../lib/constants';
 
 function BackgroundIllustration(props) {
   let id = useId();
@@ -73,7 +74,7 @@ function BackgroundIllustration(props) {
   );
 }
 
-export function Hero() {
+export default function Hero() {
   return (
     <div className='overflow-hidden py-20 sm:py-32 lg:pb-32 xl:pb-36'>
       <Container>
@@ -86,12 +87,15 @@ export function Hero() {
             <p className='mt-6 text-lg text-gray-600'>
               Understand your insurance policy with ease using AI. Get clear
               explanations of coverage and exclusions to make informed
-              decisions. Say goodbye to confusing language and hidden clauses.
-              Insurochat provides the clarity you need.
+              decisions. Say goodbye to confusing language and hidden clauses.{' '}
+              {siteName} provides the clarity you need.
             </p>
             <div className='mt-8 flex flex-wrap gap-x-6 gap-y-4'>
-              <Button href='#ask-question' variant='solid'>
-                Try it now
+              <Button href='/dashboard' variant='solid'>
+                Get started
+              </Button>
+              <Button href='#ask-question' variant='outline'>
+                Try our demo
               </Button>
             </div>
           </div>
@@ -99,7 +103,11 @@ export function Hero() {
             <BackgroundIllustration className='absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0' />
             <div className='-mx-4 h-[448px] px-9 [mask-image:linear-gradient(to_bottom,white_80%,transparent)] sm:mx-0 lg:absolute lg:-inset-x-10 lg:-top-10 lg:-bottom-20 lg:h-auto lg:px-0 lg:pt-10 xl:-bottom-32'>
               <div>
-                <Image src={HeroImage} width={608} height={599} />
+                <Image
+                  src={HeroImage}
+                  alt='Home Contents insurance policy example'
+                  priority
+                />
               </div>
             </div>
           </div>

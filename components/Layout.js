@@ -1,11 +1,11 @@
-import { Footer } from './Footer';
-import { Navbar } from './Navbar';
-import { Meta } from './Meta';
+import Footer from './Footer';
+import Meta from './Meta';
+import Navbar from './Navbar';
 
-export default function Layout({ children }) {
+export default function Layout({ pageTitle, children }) {
   return (
     <>
-      <Meta />
+      <Meta pageTitle={pageTitle} />
       <div className='min-h-screen'>
         <Navbar />
         <main>{children}</main>
