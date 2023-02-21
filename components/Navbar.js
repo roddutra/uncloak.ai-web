@@ -5,7 +5,6 @@ import { siteName } from '../lib/constants';
 import { Button } from './Button';
 import { Container } from './Container';
 import { NavLinks } from './NavLinks';
-import { useAuthenticator } from '@aws-amplify/ui-react';
 import { useEffect } from 'react';
 
 function MenuIcon(props) {
@@ -47,9 +46,6 @@ function MobileNavLink({ children, ...props }) {
 }
 
 export default function Navbar() {
-  const { user, signOut } = useAuthenticator((context) => [context.user]);
-  useEffect(() => {}, [user]);
-
   return (
     <header>
       <nav>
@@ -59,13 +55,7 @@ export default function Navbar() {
               {siteName}
             </Link>
             <div className='hidden lg:flex lg:gap-10'>
-              {user ? (
-                <Link href='/dashboard' className=''>
-                  Dashboard
-                </Link>
-              ) : (
-                <NavLinks />
-              )}
+              <NavLinks />
             </div>
           </div>
           <div className='flex items-center gap-6'>
@@ -126,26 +116,13 @@ export default function Navbar() {
               )}
             </Popover>
 
-            {user ? (
-              <div className='flex gap-4 items-center'>
-                <div>Hello, {user.attributes.email}</div>
-
-                <button
-                  onClick={signOut}
-                  className='bg-black px-8 py-2 text-white rounded-md'
-                >
-                  Log out
-                </button>
-              </div>
-            ) : (
-              <Button
-                href='/dashboard'
-                variant='outline'
-                className='hidden lg:block'
-              >
-                Log in
-              </Button>
-            )}
+            <Button
+              href='/dashboard'
+              variant='outline'
+              className='hidden lg:block'
+            >
+              Log in
+            </Button>
           </div>
         </Container>
       </nav>
