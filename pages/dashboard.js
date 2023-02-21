@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Container } from '../components/Container';
 import DocumentsList from '../components/DocumentsList';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import QuestionsAndAnswers from '../components/QuestionsAndAnswers';
 import { siteName } from '../lib/constants';
 
