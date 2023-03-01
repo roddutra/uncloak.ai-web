@@ -38,11 +38,11 @@ function QuestionsAndAnswers({ document, question, setQuestion }) {
     setError(null);
     setIsLoading(true);
 
-    const answer = await fetchAnswer(requestData);
-    console.log('Answer:', answer);
+    const response = await fetchAnswer(requestData);
+    console.log('Response:', response);
 
     setIsLoading(false);
-    setAnswer(answer);
+    setAnswer(response.result);
   }
 
   return (
@@ -73,7 +73,7 @@ function QuestionsAndAnswers({ document, question, setQuestion }) {
 
         <div className='flex-1 text-white flex flex-col justify-start items-center'>
           <div
-            className={`bg-gray-800 rounded-md p-8 w-full ${
+            className={`bg-gray-800 rounded-md p-8 w-full text-lg ${
               isLoading && 'animate-pulse'
             }`}
           >
