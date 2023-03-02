@@ -3,53 +3,48 @@ import { Container } from './Container';
 const faqs = [
   [
     {
-      question: 'Lorem ipsum dolor sit amet consectetur adipisicing elit?',
+      question: 'What is Uncloak.ai?',
       answer:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nihil iure, adipisci dolore facere cupiditate, ipsa sequi explicabo aspernatur asperiores cumque et, eaque aut nam ad animi. Nisi, assumenda similique?',
+        'Uncloak.ai is a platform that uses AI to simplify complex insurance policies into easy-to-understand language. By selecting a policy from a database, users can ask questions and receive summaries of relevant sections in plain English.',
     },
     {
-      question: 'Lorem ipsum dolor sit amet consectetur adipisicing elit?',
+      question: 'How does it work?',
       answer:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nihil iure, adipisci dolore facere cupiditate, ipsa sequi explicabo aspernatur asperiores cumque et, eaque aut nam ad animi. Nisi, assumenda similique?',
+        "Uncloak.ai first extracts relevant answers from insurance policy documents, and then utilizes OpenAI's GPT-3 to provide simplified explanations of those answers in plain English. Users can select a policy, ask questions, and receive clear and easy-to-understand summaries of the relevant sections of their insurance policy.",
     },
     {
-      question: 'Lorem ipsum dolor sit amet consectetur adipisicing elit?',
+      question: 'What kinds of documents does it support?',
       answer:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nihil iure, adipisci dolore facere cupiditate, ipsa sequi explicabo aspernatur asperiores cumque et, eaque aut nam ad animi. Nisi, assumenda similique?',
-    },
-  ],
-  [
-    {
-      question: 'Lorem ipsum dolor sit amet consectetur adipisicing elit?',
-      answer:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nihil iure, adipisci dolore facere cupiditate, ipsa sequi explicabo aspernatur asperiores cumque et, eaque aut nam ad animi. Nisi, assumenda similique?',
-    },
-    {
-      question: 'Lorem ipsum dolor sit amet consectetur adipisicing elit?',
-      answer:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nihil iure, adipisci dolore facere cupiditate, ipsa sequi explicabo aspernatur asperiores cumque et, eaque aut nam ad animi. Nisi, assumenda similique?',
-    },
-    {
-      question: 'Lorem ipsum dolor sit amet consectetur adipisicing elit?',
-      answer:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nihil iure, adipisci dolore facere cupiditate, ipsa sequi explicabo aspernatur asperiores cumque et, eaque aut nam ad animi. Nisi, assumenda similique?',
+        'Uncloak.ai currently supports Home and Contents insurance policies, but the technology can be applied to any type of complex document. We plan to expand our support to other types of insurance policies in the future.',
     },
   ],
   [
     {
-      question: 'Lorem ipsum dolor sit amet consectetur adipisicing elit?',
+      question: 'Is it free to use?',
       answer:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nihil iure, adipisci dolore facere cupiditate, ipsa sequi explicabo aspernatur asperiores cumque et, eaque aut nam ad animi. Nisi, assumenda similique?',
+        'Yes, our platform is currently free to use while we are in beta.',
     },
     {
-      question: 'Lorem ipsum dolor sit amet consectetur adipisicing elit?',
+      question: 'Can I upload my own document for Uncloak.ai to analyze?',
       answer:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nihil iure, adipisci dolore facere cupiditate, ipsa sequi explicabo aspernatur asperiores cumque et, eaque aut nam ad animi. Nisi, assumenda similique?',
+        'Currently, you cannot upload custom documents for analysis, but this will be available as a premium feature in the future. If you would like to use this feature, please get in touch with us.',
     },
     {
-      question: 'Lorem ipsum dolor sit amet consectetur adipisicing elit?',
+      question: 'How accurate are the answers provided?',
       answer:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nihil iure, adipisci dolore facere cupiditate, ipsa sequi explicabo aspernatur asperiores cumque et, eaque aut nam ad animi. Nisi, assumenda similique?',
+        'As Uncloak.ai is currently in beta, we are continuously training the model to provide more accurate answers. While it is very accurate in most cases, it may still provide inaccurate answers in some cases. Please do not rely on the current answers as being a true fact.',
+    },
+  ],
+  [
+    {
+      question: 'Can I ask follow-up questions?',
+      answer:
+        'Currently, follow-up questions are not available on Uncloak.ai. Each question is treated as a separate inquiry. However, we are actively working on bringing this functionality to the platform so that users can ask follow-up questions and hold context for better understanding.',
+    },
+    {
+      question: 'How can I provide feedback or report an issue?',
+      answer:
+        'We would love to hear any feedback on how we can make it better or concerns you may have. Please feel free to reach out to us via email at hello@uncloak.ai.',
     },
   ],
 ];
@@ -70,7 +65,7 @@ export default function Faqs() {
             Frequently asked questions
           </h2>
           <p className='mt-2 text-lg text-gray-600'>
-            If you have anything else you want to ask, please let us know.
+            If you have any other questions or feedback, please get in touch!
           </p>
         </div>
         <ul
