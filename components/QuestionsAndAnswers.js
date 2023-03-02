@@ -8,7 +8,7 @@ function QuestionsAndAnswers({ document, question, setQuestion }) {
   const [isLoading, setIsLoading] = useState(false);
   const [answer, setAnswer] = useState('Your answer will appear here...');
   const [error, setError] = useState(null);
-  const [documentCount, setDocumentCount] = useState(4);
+  const [documentCount, setDocumentCount] = useState(2);
 
   function handleChange(event) {
     setQuestion(event.target.value);
